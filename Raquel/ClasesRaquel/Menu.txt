@@ -1,0 +1,34 @@
+# print() ✓✓
+## Parámetros opcionales ~~
+
+# Variables = int, float, bool, char, string ✓✓
+## Operaciones con variables ~~
+
+# Convertir variables (try-except) ~~
+
+# input() ✓✓
+
+# If - Else ✓✓
+
+# While ✓✓
+
+# Listas (append, insert, index, remove, max, min, reverse, count)
+## in / not in
+## Recorrer listas y otras estructuras ~~
+
+# len() y range()
+
+# For
+
+# Diccionarios
+
+# Funciones (return, func, return+)
+## Funciones de listas / Funciones de Cadenas / Otras funciones
+
+# Ficheros (read, write, binary)
+
+# Debug
+
+# Módulos / Bibliotecas
+
+# Clases y Objetos
