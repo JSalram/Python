@@ -12,18 +12,21 @@
 
 # While ✓✓
 
-# Listas (append, insert, index, remove, max, min, reverse, count)
-## in / not in
+# Listas (append, insert, index, remove, max, min, reverse, count) ✓✓
+## in / not in ✓✓
 ## Recorrer listas y otras estructuras ~~
 
-# len() y range()
+# len() y range() ✓✓
 
 # For
+
+# Funciones de cadenas
 
 # Diccionarios
 
 # Funciones (return, func, return+)
-## Funciones de listas / Funciones de Cadenas / Otras funciones
+
+# Tuplas
 
 # Ficheros (read, write, binary)
 
