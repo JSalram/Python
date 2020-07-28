@@ -1,8 +1,7 @@
 # print() ✓✓
-## Parámetros opcionales ~~
 
 # Variables = int, float, bool, char, string ✓✓
-## Operaciones con variables ~~
+## Operaciones con variables ✓✓
 
 # Convertir variables (try-except) ~~
 
@@ -20,13 +19,16 @@
 
 # For
 
-# Funciones de cadenas
+# Funciones de cadenas (replace, startswith, endswith, upper, lower, split, join)
+# Formateo de cadenas ({0}{1}{2})
 
 # Diccionarios
 
-# Funciones (return, func, return+)
+# Funciones (void, return, return+, func)
 
 # Tuplas
+
+# Listas por comprensión
 
 # Ficheros (read, write, binary)
 
