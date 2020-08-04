@@ -1,18 +1,27 @@
 # Clases
+class Animal:
+    def __init__(self, nombre, color):
+        self.nombre = nombre
+        self.color = color
 
 
-class Coche:
-    def __init__(self, modelo, marca, matricula, potencia, color):
-        self.modelo = str(modelo)
-        self.marca = str(marca)
-        self.matricula = str(matricula)
-        self.potencia = int(potencia)
-        self.color = str(color)
-
-    def __str__(self):
-        return '{self.matricula} - {self.modelo}, {self.marca}: Potencia: {self.potencia} Kw;' \
-               ' Color: {self.color}'.format(self=self)
+class Gato(Animal):
+    def maulla(self):
+        print(self.nombre + ": \'Miau\'")
 
 
-car = Coche("Mercedes Benz", "Clase E", "3425KMW", 130, "Negro")
-print(car)
+class Perro(Animal):
+    def ladra(self):
+        print(self.nombre + ": \'Guau\'")
+
+
+pancho = Perro("pancho", "blanco")
+pancho.ladra()
+
+
+class Test:
+    def testeo(self):
+        print("Prueba")
+
+
+Test().testeo()

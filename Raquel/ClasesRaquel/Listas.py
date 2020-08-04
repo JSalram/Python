@@ -15,6 +15,10 @@ print(listaElementos[3])
 cadenaCaracteres = "Hola me llamo Javi"
 print(cadenaCaracteres[3])
 
+
+# ==========================================================================
+
+
 # Métodos de las listas
 ## .append(elemento)
 listaAppend = [1, 2, 3, 4, 5]
@@ -51,6 +55,10 @@ listaSort = [1, 6, 2, 7, 3, 5, 4]
 listaSort.sort(reverse=True)
 print(listaSort)
 
+
+# ==========================================================================
+
+
 # in / not in
 cadena = "Hola me llamo Javi"
 if "Javi" in cadena:
@@ -64,6 +72,10 @@ if 2.5 in listaIn:
 if 2.6 not in listaIn:
     print("No lo contiene")
 
+
+# ==========================================================================
+
+
 # min() y max()
 listaMinMax = [1, 2, 3, 4, 5, 6]
 print("Mínimo:", str(min(listaMinMax)))
@@ -72,6 +84,10 @@ print("Máximo:", str(max(listaMinMax)))
 cadenaMinMax = "abcdefghijk"
 print("Mínimo:", min(cadenaMinMax))
 print("Máximo:", max(cadenaMinMax))
+
+
+# ==========================================================================
+
 
 # len() y range([inicio,] fin [,incremento])
 cadenaLen = "AEIOU"
@@ -83,6 +99,10 @@ print(len(listaLen))
 rango = list(range(5, 10, 2))
 print(rango)
 
+
+# ==========================================================================
+
+
 # Cortes de lista [inicio:fin[:incremento]
 cadenaCortes = "Hola me llamo Javi"
 subCadena = cadenaCortes[14:]
@@ -91,3 +111,16 @@ print(subCadena)
 listaCortes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 subLista = listaCortes[1:6]
 print(subLista)
+
+
+# ==========================================================================
+
+
+# Incremento y más
+listaCortes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(listaCortes[::-1])
+
+print(listaCortes[:-2])
+
+frase = "Ayer fui a comprar el pan"
+print(frase[::2])

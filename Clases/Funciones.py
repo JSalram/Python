@@ -27,7 +27,7 @@ print("=========================================================================
 print("Map y filter\n------------")
 
 
-## Map
+## Map ==> Con operadores
 def plus5(x):
     return x + 5
 
@@ -38,7 +38,7 @@ print(res)
 
 print(list(map(lambda x: x + 5, numeros)))
 
-## Filter
+## Filter ==> Con condiciones
 numeros = [5, 10, 15, 20]
 res2 = list(filter(lambda x: x > 10, numeros))
 print(res2)

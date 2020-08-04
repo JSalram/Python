@@ -3,7 +3,7 @@
 # Variables = int, float, bool, char, string ✓✓
 ## Operaciones con variables ✓✓
 
-# Convertir variables (try-except) ~~
+# Convertir variables (try-except) ✓✓
 
 # input() ✓✓
 
@@ -13,18 +13,18 @@
 
 # Listas (append, insert, index, remove, max, min, reverse, count) ✓✓
 ## in / not in ✓✓
-## Recorrer listas y otras estructuras ~~
+## Recorrer listas y otras estructuras ✓✓
 
 # len() y range() ✓✓
 
-# For
+# For ✓✓
 
 # Funciones de cadenas (replace, startswith, endswith, upper, lower, split, join)
 # Formateo de cadenas ({0}{1}{2})
 
-# Diccionarios
-
 # Funciones (void, return, return+, func)
+
+# Diccionarios
 
 # Tuplas
 

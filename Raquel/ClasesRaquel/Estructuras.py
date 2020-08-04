@@ -1,5 +1,4 @@
 # Recorrer estructuras
-
 # While
 
 s = "Hola"
@@ -46,4 +45,32 @@ for alumno in ["Javier", "Adriana", "Manuel", "Patricia", "Jorge"]:
     print(alumno)
 
 for i in range(10):
+    print(i)
+
+
+# ==========================================================================
+
+
+# Break y Continue
+
+for i in range(11):
+    if i % 2 != 0:
+        continue    # Finaliza el ciclo y continúa dentro del bucle
+    print(i)
+
+while True:
+    salir = input("¿Deseas salir? (s/n)\n")
+    if salir == "s":
+        break       # Fuerza la salida del bucle
+
+
+# ==========================================================================
+
+
+# Range([inicio,] fin [,incremento])
+
+for i in range(0, 11, 2):
+    print(i)
+
+for i in range(1, 11, 2):
     print(i)
