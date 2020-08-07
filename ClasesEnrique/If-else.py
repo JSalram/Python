@@ -14,6 +14,7 @@ else:      # n < 0
     print("No es mayor que 0")
 print("Esta fuera de la condición")  # Imprime esto siempre, ya que está fuera
 
+
 if n > 0:
     # Si es mayor que 0, ejecuta:
     print("Mayor que 0")
@@ -24,7 +25,7 @@ if n > 5:
 
 var = 2
 var2 = 3
-print(var != var2) # Las condiciones devuelven un booleano (True / False)
+print(var != var2)  # Las condiciones devuelven un booleano (True / False)
 
 
 
@@ -36,11 +37,14 @@ if n > 0 and n < 10:    # 0 < n < 10
 else:
     print("Lo contrario")
 
+
 if n > 0 and n < 10 or n > 10:  # Se encapsulan automáticamente las condiciones separadas por 'and'
     print("Mayor que 0 o mayor que 10")
 else:
     print("Lo contrario")
 
+
+# =============================================================================================
 
 
 # Otras condicionales
@@ -53,6 +57,7 @@ if cad == "Hola":
 alumno = "Antonio"
 alumno2 = "Javier"
 
+
 ## Condicionales de booleanos
 booleano = alumno < alumno2
 
@@ -60,3 +65,18 @@ if booleano:
     print(alumno + " va por delante de " + alumno2)
 else:
     print(alumno2 + " va por delante de " + alumno)
+
+
+# =============================================================================================
+
+
+# not
+n = 5
+
+if not n == 5:  # n != 5
+    print("Es distinto de 5")
+
+
+### ord() y chr() ###
+ord('<')  # Nos devuelve el codigo ASCII
+chr(60)  # Nos devuelve el caracter

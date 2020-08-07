@@ -15,3 +15,5 @@
 
 
 # Formateo de cadenas ({0}{1}{2})(.format)
+
+# Cortes de cadena [inicio:fin[:incremento]

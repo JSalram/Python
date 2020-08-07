@@ -1,13 +1,13 @@
-# print()
+# print() ✔✔
 
-# Variables = int, float, bool, char, string
-## Operaciones con variables
+# Variables = int, float, bool, char, string ✔✔
+## Operaciones con variables ✔✔
 
-# Convertir variables (try-except)
+# Convertir variables (try-except) ✔✔
 
-# input()
+# input() ✔✔
 
-# If - Else
+# If - Else ✔✔
 
 # While
 
