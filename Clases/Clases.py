@@ -15,8 +15,8 @@ class Perro(Animal):
         print(self.nombre + ": \'Guau\'")
 
 
-pancho = Perro("pancho", "blanco")
-pancho.ladra()
+# pancho = Perro("pancho", "blanco")
+# pancho.ladra()
 
 
 class Test:
@@ -24,4 +24,27 @@ class Test:
         print("Prueba")
 
 
-Test().testeo()
+# Test().testeo()
+
+
+class Figuras:
+    def __init__(self, altura, anchura):
+        self.altura = altura
+        self.anchura = anchura
+
+    def __str__(self):
+        return str(self.altura) + " x " + str(self.anchura)
+
+    @classmethod
+    def cuadrado(cls, lado):
+        return cls(lado, lado)
+
+    @staticmethod
+    def hola():
+        print("Hola")
+
+
+f = Figuras.cuadrado(5)
+print(f)
+
+Figuras.hola()
