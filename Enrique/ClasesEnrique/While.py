@@ -76,3 +76,7 @@ while inicial > objetivo:
 ### round(numero [,decimales])
 n = round(17.5674, 2)
 print(n)
+
+# ToDo: Fallo round
+n = round(2.5)
+print(n)
