@@ -76,9 +76,9 @@ print(lista)
 # =============================================================================================
 
 
-# ToDo: Métodos mágicos
-
 # in / not in
+
+# ToDo: Métodos mágicos
 
 # min() y max()
 
