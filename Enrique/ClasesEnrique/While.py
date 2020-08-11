@@ -74,9 +74,9 @@ while inicial > objetivo:
     print(distancia)
 
 ### round(numero [,decimales])
-n = round(17.5674, 2)
+n = round(17.5)
 print(n)
 
-# ToDo: Fallo round
+# Fallo round # --------> Lo más apropiado sería trabajar con números enteros
 n = round(2.5)
 print(n)

@@ -77,11 +77,48 @@ print(lista)
 
 
 # in / not in
+lista = [1, 2, 3, 4, 5, 6, 4]
+print(4 in lista)
 
-# ToDo: Métodos mágicos
+while 4 in lista:
+    lista.remove(4)
+print(lista)
+
+cad = "Rodolfo"
+print("dolfo" in cad)
+
+# Métodos mágicos
+lista = [1, 2, 3]
+lista += [4, 5, 6]  # ==> lista.__add__()
+print(lista)
+
+del lista[0]  # ==> lista.__delitem__()
+print(lista)
 
 # min() y max()
+print(min(1, 3, 5, 7, 8))
+lista = [1, 3, 5, 7, 8]
+print(max(lista))
+
+print(max("Antonio", "Juan", "Pepa"))
 
 # len() y range([inicio,] fin [,incremento])
+lista = [1, 3, 5, 7, 8]
+print(len(lista))
 
-# Cortes de lista [inicio:fin[:incremento]
+print(len("Antonio"))
+
+listaRange = list(range(5, 10, 2))
+print(listaRange)
+
+# Cortes de estructura [inicio:fin[:incremento]
+lista = [0, 1, 2, 3, 4, 5, 6]
+print(lista[2:7:2])
+print(lista[3:])
+print(lista[:3])
+print(lista[::-1])
+print(lista[:-2])
+
+cad = "Ayer fui a comprar"
+
+print(cad[::-1])

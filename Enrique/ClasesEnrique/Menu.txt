@@ -9,9 +9,9 @@
 
 # If - Else ✔✔
 
-# While
+# While ✔✔
 
-# Listas (append, insert, index, remove, max, min, reverse, count)
+# Listas (append, insert, index, remove, max, min, reverse, count) ✔✔
 ## in / not in
 ## Recorrer listas y otras estructuras
 
