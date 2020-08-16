@@ -1,5 +1,6 @@
-año= int(input("introduce un año: "))
-if (año % 4) and (año & 400 ) and (año % 100 != 0):
+anno = int(input("introduce un año: "))
+
+if anno % 4 == 0 and (anno % 400 == 0 or anno % 100 != 0):
     print ("es bisiesto")
 else:
     print ("no es bisiesto")

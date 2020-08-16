@@ -1,4 +1,6 @@
-# Diccionarios
+# Tuplas ==> Inmutables
+
+# Diccionarios ==> Clave y Definición
 ## Definir
 
 ## Definir e insertar objetos

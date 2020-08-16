@@ -1,10 +1,16 @@
 seguir = True
 
 while seguir:
-    print("1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir")
+    print("1. Sumar")
+    print("2. Restar")
+    print("3. Multiplicar")
+    print("4. Dividir")
+    print("5. Salir")
+
     opcion = int(input("Elige una opción: "))
     n1=float(input("Introduce un número: "))
     n2=float(input("Introduce otro número: "))
+
     if opcion == 1:
         print("La suma es: ", n1+n2)
     elif opcion == 2:

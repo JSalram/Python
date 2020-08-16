@@ -12,17 +12,19 @@
 # While ✔✔
 
 # Listas (append, insert, index, remove, max, min, reverse, count) ✔✔
-## in / not in
-## Recorrer listas y otras estructuras
+## in / not in ✔✔
+## Recorrer listas y otras estructuras ✔✔
 
-# len() y range()
+# len() y range() ✔✔
 
-# For
+# For ✔✔
 
-# Funciones de cadenas (replace, startswith, endswith, upper, lower, split, join)
-# Formateo de cadenas ({0}{1}{2})
+# Funciones de cadenas (replace, startswith, endswith, upper, lower, split, join) ✔✔
+# Formateo de cadenas ({0}{1}{2}) ✔✔
 
 # Funciones (void, return, return+, func)
+
+# Módulos / Bibliotecas (pow)
 
 # Diccionarios
 
@@ -33,7 +35,5 @@
 # Ficheros (read, write, binary)
 
 # Debug
-
-# Módulos / Bibliotecas
 
 # Clases y Objetos
