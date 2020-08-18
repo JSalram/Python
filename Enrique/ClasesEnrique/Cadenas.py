@@ -62,3 +62,9 @@ print("Alumnos: {0}, {1}, {2}, {3}".format(*listaAlumnos))  # *lista ==> Represe
 
 
 # Cortes de cadena [inicio:fin[:incremento]
+cad = "Ayer compré palomitas"
+
+print(cad[::-1])
+
+inicio = cad.index("palomitas")
+print(cad[inicio:])

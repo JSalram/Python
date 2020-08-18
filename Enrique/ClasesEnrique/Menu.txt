@@ -24,16 +24,16 @@
 
 # Funciones (void, return, return+, func)
 
+# Algoritmos
+
 # Módulos / Bibliotecas (pow)
 
-# Diccionarios
+# Diccionarios y tuplas
 
-# Tuplas
+# Clases y Objetos
 
 # Listas por comprensión
 
 # Ficheros (read, write, binary)
 
 # Debug
-
-# Clases y Objetos

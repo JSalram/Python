@@ -122,3 +122,12 @@ print(lista[:-2])
 cad = "Ayer fui a comprar"
 
 print(cad[::-1])
+
+
+# =============================================================================================
+
+
+# Modificar elementos
+lista = [3, 6, 2, 8, 1]
+lista[0] = 6
+print(lista)

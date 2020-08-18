@@ -15,6 +15,8 @@ print(listaElementos[3])
 cadenaCaracteres = "Hola me llamo Javi"
 print(cadenaCaracteres[3])
 
+# ToDo: Modificar elementos
+
 
 # ==========================================================================
 
@@ -119,8 +121,15 @@ print(subLista)
 # Incremento y más
 listaCortes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(listaCortes[::-1])
-
 print(listaCortes[:-2])
 
 frase = "Ayer fui a comprar el pan"
 print(frase[::2])
+
+
+# ==========================================================================
+
+
+# ToDo: Métodos mágicos
+
+# ToDo EJERCICIO: Media

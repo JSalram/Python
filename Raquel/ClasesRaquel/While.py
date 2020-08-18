@@ -75,3 +75,7 @@ print("La diferencia es de " + str(resto))
 # round(numero [,decimales])
 decimal = 2.5
 print(round(decimal))
+
+# ToDo: error round
+n = round(17.5)
+print(n)
