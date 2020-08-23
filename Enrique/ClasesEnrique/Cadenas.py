@@ -57,6 +57,9 @@ listaAlumnos = ["Rodolfo", "Javi", "Juan", "Pepe"]
 print("Alumnos: {0}, {1}, {2}, {3}".format("Rodolfo", "Javi", "Juan", "Pepe"))
 print("Alumnos: {0}, {1}, {2}, {3}".format(*listaAlumnos))  # *lista ==> Representa los elementos de una lista
 
+## format sin elementos
+print("Alumnos: {}, {} y {}".format("Javi", "Enrique", "Juana"))
+
 
 # =============================================================================================
 

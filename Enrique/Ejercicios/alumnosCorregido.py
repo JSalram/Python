@@ -1,3 +1,26 @@
+def eliminaAlumno(lista, lista2, opcion):
+    if opcion == 1:
+        i = int(input("Posición en la lista del alumno: "))
+        i -= 1
+        if 0 <= i < len(lista):
+            print("\'{}\' eliminado con éxito".format(lista[i]))
+            del lista[i]
+            del lista2[i]
+        else:
+            print("No existe ningún alumno en esa posición.")
+
+    elif opcion == 2:
+        alumno = input("Alumno: ")
+
+        if alumno in lista:
+            i = lista.index(alumno)
+            print("\'{}\' eliminado con éxito".format(lista[i]))
+            del lista[i]
+            del lista2[i]
+        else:
+            print("El alumno indicado no coincide.")
+
+
 def media(lista):
     n = 0
     for i in listaNotas:
@@ -7,12 +30,12 @@ def media(lista):
     return media
 
 
-lista = ["Juan","Pepe","Carlos","María"]
+lista = ["Juan", "Pepe", "Carlos",  "María"]
 listaNotas = [2.0, 5.7, 3.4, 9.2]
 
-seguir = True
+print()
 
-while seguir:
+while True:
     print("1. Imprimir lista                    2. Añadir alumno")
     print("3. Eliminar alumno                   4. Ordenar lista ")
     print("5. Invertir lista                    6. Media de notas ")
@@ -24,7 +47,7 @@ while seguir:
     if opcion == 1:
         print("____Lista_de_alumnos____")
         for i in range(len(lista)):
-            print("{i} - {alum}: {nota}".format(i = i+1, alum = lista[i], nota = listaNotas[i]))
+            print("{} - {}: {}".format(i+1, lista[i], listaNotas[i]))
 
 
     elif opcion == 2:
@@ -42,30 +65,13 @@ while seguir:
         while elim != 1 and elim != 2:
             elim = int(input("Opción incorrecta. Vuelve a intentarlo: "))
 
-        if elim == 1:
-            i = int(input("Posición en la lista del alumno: "))
-            i -= 1
-            if 0 <= i < len(lista):
-                print("\'{}\' eliminado con éxito".format(lista[i]))
-                del lista[i]
-                del listaNotas[i]
-            else:
-                print("No existe ningún alumno en esa posición.")
-
-        elif elim == 2:
-            alumno = input("Alumno: ")
-
-            if alumno in lista:
-                i = lista.index(alumno)
-                del lista[i]
-                del listaNotas[i]
-            else:
-                print("El alumno indicado no coincide")
+        eliminaAlumno(lista, listaNotas, elim)
 
 
     elif opcion == 4:
-        # Crear función 'ordenaBurbuja' para ordenar alumnos en orden alfabético o por nota
-        print("Falta método")
+        print("Falta método ordenaBurbuja")
+        lista.sort()
+        listaNotas.sort()
 
 
     elif opcion == 5:
@@ -78,9 +84,9 @@ while seguir:
     
     
     elif opcion == 7:
-        seguir = False
+        break
 
     else:
         print("Opción incorrecta. Introduzca una opción válida")
 
-    print("\n")
+    print("------------------------------------------------------")

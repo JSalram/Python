@@ -175,3 +175,27 @@ def palindromo(func, palabra):
 
 
 palindromo(inviertePalabra, "oro")
+
+
+# =============================================================================================
+
+
+# Explicación Parámetros
+def mult(n1, n2):
+    return n1 * n2
+
+
+a = int(input("Número 1: "))
+b = int(input("Número 2: "))
+
+print(mult(a, b))
+
+
+def ordenaLista(lista1, lista2):
+    return None
+
+
+alumnos = ["Javi", ...]
+notas = [2.4, ...]
+
+ordenaLista(alumnos, notas)

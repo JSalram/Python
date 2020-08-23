@@ -30,6 +30,8 @@ notas = [6, 7, 3, 9]
 print("Notas: {0}, {1}, {2}, {3}, {4}".format(6, 7, 3, 9, 5))
 print("Notas: {0}, {1}, {2}, {3}, {4}".format(*notas))  # *lista ==> Representa los elementos de una lista
 
+# format() sin elementos
+
 
 # =============================================================================================
 

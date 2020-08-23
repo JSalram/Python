@@ -22,7 +22,7 @@
 # Funciones de cadenas (replace, startswith, endswith, upper, lower, split, join) ✔✔
 # Formateo de cadenas ({0}{1}{2}) ✔✔
 
-# Funciones (void, return, return+, func)
+# Funciones (void, return, return+, func) ✔✔
 
 # Algoritmos
 

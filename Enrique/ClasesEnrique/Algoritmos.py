@@ -3,7 +3,8 @@
 ## Descendente
 
 """
-lista = [3, 2, 1]
+alumnos = ["Pepe", "Juan", "Lolo", "Maria", "María", "Rocío", "Lola"]
+lista = [4, 6, 9, 8, 4, 2, 1]
 
 for i in lista:
     for j in range(len(lista) - 1):
@@ -13,6 +14,13 @@ for i in lista:
             temp = lista[j]
             lista[j] = lista[k]
             lista[k] = temp
+
+            temp2 = alumnos[j]
+            alumnos[j] = alumnos[k]
+            alumnos[k] = temp2
+
+print(alumnos)
+print(lista)
 """
 
 

@@ -5,11 +5,15 @@ while i <= 10:
     i = i + 1
 
 
+# ==========================================================================
+
+
 # and / or
 num = 10
 if (num == 5 and num < 10) or num > 20:
     print("Es 5 y menor de 10")
 
+# ==========================================================================
 
 # Bucle numérico
 i = 0
@@ -22,6 +26,9 @@ while i <= 10:
     i += 1
 
 
+# ==========================================================================
+
+
 # Bucle booleano
 sigue = True
 while sigue:
@@ -29,6 +36,9 @@ while sigue:
     if i >= 10:
         sigue = False
     i += 1
+
+
+# ==========================================================================
 
 
 # Bucle con input
@@ -40,12 +50,18 @@ while salir != "si":
         salir = input("Opción errónea. Vuelve a intentarlo (si/no): ")
 
 
+# ==========================================================================
+
+
 # Bucle con cadenas
 cadena = "Javi"
 i = 0
 while i < len(cadena):
     print(cadena[i], end=" ")
     i += 1
+
+
+# ==========================================================================
 
 
 # Bucle float (no preciso)
@@ -71,6 +87,10 @@ while inicial > objetivo:
 
 print("Llegó")
 print("La diferencia es de " + str(resto))
+
+
+# ==========================================================================
+
 
 # round(numero [,decimales])
 decimal = 2.5
