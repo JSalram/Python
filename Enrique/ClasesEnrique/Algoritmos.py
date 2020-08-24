@@ -1,9 +1,5 @@
 # Método de la burbuja
 ## Ascendente
-## Descendente
-
-"""
-alumnos = ["Pepe", "Juan", "Lolo", "Maria", "María", "Rocío", "Lola"]
 lista = [4, 6, 9, 8, 4, 2, 1]
 
 for i in lista:
@@ -15,39 +11,74 @@ for i in lista:
             lista[j] = lista[k]
             lista[k] = temp
 
-            temp2 = alumnos[j]
-            alumnos[j] = alumnos[k]
-            alumnos[k] = temp2
-
-print(alumnos)
 print(lista)
-"""
+
+
+## Descendente
+lista = [4, 6, 9, 8, 4, 2, 1]
+
+for i in lista:
+    # El error era que necesitaba llegar hasta 0,
+    # ya que no se cuenta la posición 0 para j pero sí para k
+    # y no terminaba de ordenarlo por completo por ello
+    for j in range(len(lista) - 1, 0, -1):
+        k = j - 1
+
+        if lista[j] < lista[k]:
+            temp = lista[j]
+            lista[j] = lista[k]
+            lista[k] = temp
+    print(lista)
+
+print(lista)
+
+
+# =============================================================================================
 
 
 # Método de selección
-
-"""
-lista = [3, 2, 1]
+lista = [4, 6, 9, 8, 4, 2, 1]
+print("INICIO: " + str(lista))
 
 for i in range(len(lista)):
     menor = lista[i]
     pos = i
 
-    for j in range(i, len(lista)):
+    for j in range(i + 1, len(lista)):
         if lista[j] < menor:
             menor = lista[j]
             pos = j
 
-    lista.insert(i, lista[pos])
-    del lista[pos+1]
-"""
+    lista.insert(i, menor)
+    del lista[pos + 1]
+
+print("FIN: " + str(lista))
+
+
+# =============================================================================================
+
 
 # Método de inserción
 ## Cadenas
-## Listas
+def sustituyeCaracter(cadena, caracterASustituir, caracterSustituto):
+    cadSust = ""
+    for letra in cadena:
+        if letra == caracterASustituir:
+            cadSust += caracterSustituto
+        else:
+            cadSust += letra
 
-"""
-lista = [3, 2, 1]
+        print(cadSust)
+
+    return cadSust
+
+
+cadena = "Hola Mundo"
+print(sustituyeCaracter(cadena, "o", "a"))
+
+
+## Listas
+lista = [0, 3, 2, 1]
 listaOrd = []
 
 while len(lista) > 0:
@@ -61,4 +92,3 @@ while len(lista) > 0:
 
     del lista[pos]
     listaOrd.append(menor)
-"""

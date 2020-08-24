@@ -1,3 +1,4 @@
+# Hay números que se le escapan (p.e.: 97)
 def primo(a):
     if a==0:
         print("No es válido")
