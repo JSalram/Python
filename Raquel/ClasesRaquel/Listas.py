@@ -15,8 +15,6 @@ print(listaElementos[3])
 cadenaCaracteres = "Hola me llamo Javi"
 print(cadenaCaracteres[3])
 
-# ToDo: Modificar elementos
-
 
 # ==========================================================================
 
@@ -131,5 +129,15 @@ print(frase[::2])
 
 
 # ToDo: Métodos mágicos
+lista = [4, 8, 2, 6]
+print(lista)
+del lista[1]    # lista.__delitem__(i)
+print(lista)
 
-# ToDo EJERCICIO: Media
+# lista = [4, 2, 6]
+
+print(lista[2]) # lista.__getitem__(2)
+
+print(lista)
+lista[1] = 8    # lista.__setitem__(1, 8)
+print(lista)

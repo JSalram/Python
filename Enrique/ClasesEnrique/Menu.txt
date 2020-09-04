@@ -24,13 +24,13 @@
 
 # Funciones (void, return, return+, func) ✔✔
 
-# Algoritmos
+# Algoritmos ✔✔
 
-# Módulos / Bibliotecas (pow)
+# Módulos / Bibliotecas (pow) ✔✔
 
-# Diccionarios y tuplas
+# Diccionarios y tuplas ✔✔
 
-# Clases y Objetos
+# Clases y Objetos ✔✔
 
 # Listas por comprensión
 

@@ -48,24 +48,26 @@ print("{a} y {b}".format(a=n1, b=n2))
 
 
 # Ejercicio alumnos
-"""
 cantidad = int(input("¿Que cantidad de estudiantes hay en clase?\n"))
 
+estudiantes = ["Juan", "Pepe", "Rocío", "María", "Manuel"]
+notas =         [ 3,      5,      6,       2,        9]
+
 i = 0
-while i < cantidad:
+while i < cantidad:  # Si cantidad es 5, 'i' va a recorrer de 0 a 4
     nota = float(input("Nota del alumno: "))
-    
+
     if i == 0:
         menor = nota
         mayor = nota
+    else:
+        if nota < menor:  # Si la nueva nota es menor que la menor almacenada, se guarda en 'menor'
+            menor = nota
 
-    if nota < menor:
-        menor = nota
-
-    if nota > mayor:
-        mayor = nota
+        if nota > mayor:  # Si la nueva nota es mayor que la mayor almacenada, se guarda en 'mayor'
+            mayor = nota
 
     i += 1
 
+print(mayor)
 print(menor)
-"""

@@ -26,11 +26,16 @@ saludo = "Hola mi nombre es {nombre} y tengo {edad} años".format(nombre=nombre,
 print(saludo)
 
 ## Usando una lista de elementos
-notas = [6, 7, 3, 9]
+notas = [6, 7, 3, 9, 2]
 print("Notas: {0}, {1}, {2}, {3}, {4}".format(6, 7, 3, 9, 5))
 print("Notas: {0}, {1}, {2}, {3}, {4}".format(*notas))  # *lista ==> Representa los elementos de una lista
 
 # format() sin elementos
+nombre = "Javi"
+edad = 22
+
+print("Hola me llamo {} y tengo {} años".format(nombre, edad))
+"""print("Hola me llamo " + nombre + " y tengo " + str(edad))"""
 
 
 # =============================================================================================
@@ -39,3 +44,4 @@ print("Notas: {0}, {1}, {2}, {3}, {4}".format(*notas))  # *lista ==> Representa 
 # Cortes de cadena [inicio:fin[:incremento]
 
 # ToDo EJERCICIO: Invertir cadena
+# ToDo EJERCICIO: Quita Espacios

@@ -97,5 +97,14 @@ decimal = 2.5
 print(round(decimal))
 
 # ToDo: error round
-n = round(17.5)
-print(n)
+n = 17.5
+print(round(n))
+
+# RECOMENDACIÓN: Tratar siempre con números enteros
+decimal = 2.5
+entero = int(decimal * 10)
+print(entero)
+
+entero -= 2
+entero = entero / 10
+print(entero)

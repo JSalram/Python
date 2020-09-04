@@ -199,3 +199,15 @@ alumnos = ["Javi", ...]
 notas = [2.4, ...]
 
 ordenaLista(alumnos, notas)
+
+
+# =============================================================================================
+
+
+# Explicación return
+def mayor(n1, n2):
+
+    if n1 > n2:
+        return n1
+    else:
+        return n2
