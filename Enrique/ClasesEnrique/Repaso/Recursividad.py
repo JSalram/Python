@@ -89,10 +89,16 @@ print("Invierte palabra recursivo: " + str(inviertePalabra(cad, len(cad)-1)))
 
 ## Ejercicio 6
 def cuentaDigitos(n):
-    if n < 9:
-        dig = 1
+    if n >= 0:
+        if n < 10:
+            dig = 1
+        else:
+            dig = 1 + cuentaDigitos(n / 10)
     else:
-        dig = 1 + cuentaDigitos(n / 10)
+        if n > -10:
+            dig = 1
+        else:
+            dig = 1 + cuentaDigitos(n / 10)
 
     return dig
 
@@ -106,14 +112,21 @@ print("Cuenta dígitos recursivo: " + str(cuentaDigitos(100)))
 ## Ejercicio 7
 def binario(n):
     if n < 2:
-        res = str(n % 2)
+        res = str(n)
     else:
-        res = str(n % 2) + binario(n // 2)
+        res = binario(n // 2) + str(n % 2)
+
+    # 28 % 2 == 0
+    # 14 % 2 == 0
+    # 7 % 2 == 1
+    # 3 % 2 == 1
+    # 3 // 2 == 1
 
     return res
 
 
-print("Binario recursivo: " + binario(28)[::-1])
+print("Binario recursivo: " + binario(28))
+""" http://recursostic.educacion.es/secundaria/edad/4esotecnologia/quincena5/4q2_contenidos_2c.htm """
 
 
 # =============================================================================================
@@ -150,3 +163,61 @@ def sumaEdades(lista, pos=0):
 
 edades = [23, 17, 30]
 print("Suma edades recursivo: " + str(sumaEdades(edades)))
+
+
+# =============================================================================================
+
+
+## Ejercicio 'elevado'
+def elevado(x, y):
+    if y < 0:
+        rec = "Exponente inválido"
+    elif y == 0:
+        rec = 1
+    elif y == 1:
+        rec = x
+    else:
+        rec = x * elevado(x, y-1)
+
+    return rec
+
+
+print(elevado(2, 3))
+
+
+## Ejercicio 'factorial'
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+print(factorial(3))
+
+
+## Ejercicio 'invierteCadena'
+def invierteCadena(cad, pos, fin):
+    if pos == fin:
+        return cad[pos]
+    else:
+        return invierteCadena(cad, pos + 1, fin) + cad[pos]
+
+
+cad = "Hola"
+print(invierteCadena(cad, 0, len(cad)-1))
+
+
+## Ejercicio 'palindromo'
+def palindromo(cad, inicio, fin):
+
+    if inicio >= fin:
+        pal = True
+    else:
+        pal = cad[inicio] == cad[fin] and palindromo(cad, inicio+1, fin-1)
+
+    return pal
+
+
+cad = "orro"
+print(palindromo(cad, 0, len(cad)-1))

@@ -13,6 +13,8 @@
 
 ## separador.join(estructura)
 
+## .isdecimal // .isalpha
+
 
 # =============================================================================================
 
@@ -43,5 +45,5 @@ print("Hola me llamo {} y tengo {} años".format(nombre, edad))
 
 # Cortes de cadena [inicio:fin[:incremento]
 
-# ToDo EJERCICIO: Invertir cadena
+# ToDo: Invertir cadena
 # ToDo EJERCICIO: Quita Espacios

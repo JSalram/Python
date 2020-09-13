@@ -32,8 +32,4 @@
 
 # Clases y Objetos ✔✔
 
-# Listas por comprensión
-
-# Ficheros (read, write, binary)
-
-# Debug
+# Debug ✔✔

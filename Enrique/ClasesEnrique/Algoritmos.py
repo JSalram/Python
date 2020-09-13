@@ -92,3 +92,26 @@ while len(lista) > 0:
 
     del lista[pos]
     listaOrd.append(menor)
+
+
+# =============================================================================================
+
+
+# Busqueda binaria
+def busquedaBinaria(lista, obj):
+    encontrado = False
+    ini = 0
+    fin = len(lista) - 1
+    pos = -1
+
+    while ini <= fin and not encontrado:
+        centro = (ini + fin) // 2
+        if obj == lista[centro]:
+            encontrado = True
+            pos = centro
+        elif obj < lista[centro]:
+            fin = centro - 1
+        else:
+            ini = centro + 1
+
+    return pos

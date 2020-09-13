@@ -6,6 +6,7 @@
 ## Parámetros por defecto
 
 ## Return / Devuelve un valor
+### ToDo EJERCICIO: cuentaPalabras
 ### ToDo EJERCICIO: buscar_y_reemplazar
 
 ## Return+ / Devuelve valores
