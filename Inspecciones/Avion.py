@@ -1,5 +1,9 @@
+# Clase Avion
 class Avion:
+    # Constructor
+    # tipo = parámetro tipo avión (se introduce al consultar)
     def __init__(self, tipo):
+        # Se inicializan automáticamente mediante las funciones
         self.tipo = self.listaAvion(tipo)
         self.grupo = self.listaGrupo(tipo)
         self.horas = []
@@ -29,6 +33,7 @@ class Avion:
 
         return tipoGrupo[tipo]
 
+    # Devuelve el inicio de año si el parámetro coincide
     @staticmethod
     def anno(dia):
         annos = [
@@ -49,8 +54,8 @@ class Avion:
         else:
             return ""
 
+    # Comprueba el tipo de inspección que segun horas motor
     def compruebaIns(self, horas):
-
         if self.tipo != "diamonds":
             if (horas / 500) % 2 == 0 and horas % 1000 == 0:
                 return 1000
@@ -81,6 +86,7 @@ class Avion:
             else:
                 return 100
 
+    # Rota el grupo
     def cambiaGrupo(self, horas, g):
         ult = len(self.grupo)
         self.hCambio.append(horas)
@@ -91,6 +97,7 @@ class Avion:
 
         return g
 
+    # Automatiza el incremento de horas y los grupos que actúan
     def hDia(self):
         g = 0
         j = 1
@@ -108,6 +115,9 @@ class Avion:
 
             j += 1
 
+    # Rellena el diccionario annos con todos los días, horas de actividad,
+    # horas de inspección, grupos activos y tipos de inspección agrupado
+    # en cada año correspondiente
     def agrupaAnnos(self):
         nHoras = 50
         if self.tipo == "diamonds":
@@ -149,6 +159,7 @@ class Avion:
 
             dia += 1
 
+    # Representación por año (Modo Visual)
     def annoIns(self, anno):
         a = self.annos[str(anno)]
         ins = {
@@ -166,6 +177,7 @@ class Avion:
 
         return ins
 
+    # Representación por año (Modo Consola)
     def printAnno(self, anno):
         a = self.annos[str(anno)]
         ins = self.annoIns(anno)

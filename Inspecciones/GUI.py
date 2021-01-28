@@ -1,7 +1,7 @@
 from tkinter import *
 from Avion import Avion
 
-
+# Modo Visual
 def printAvion():
     t = int(tipo.get())
     anyo = str(anno.get())

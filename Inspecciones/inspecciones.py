@@ -1,5 +1,6 @@
 from Avion import Avion
 
+# Modo Consola
 while True:
     print("1. Diamonds          2. Pipers          3. Acrobáticas")
 
