@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <h3>¡Hola {{ user.username | capfirst }}!</h3>
+        {% if user.age %}
+            <p>Tienes {{ user.age }} años.</p>
+        {% endif %}
+    {% else %}
+        <p>Aún no has iniciado sesión</p>
+    {% endif %}
+{% endblock content %}

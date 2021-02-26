@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Artículos{% endblock %}
+
+{% block nav-li %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'article_new' %}">
+            + Nuevo
+        </a>
+    </li>
+{% endblock nav-li %}
+
+{% block content %}
+    {% for article in object_list %}
+        <div class="card">
+            <div class="card-header">
+                <span class="font-weight-bold">{{ article.title }}</span> &middot;
+                <span class="text-muted">por {{ article.author }} | {{ article.date }}</span>
+            </div>
+            <div class="card-body">
+                {{ article.body }}
+            </div>
+            <div class="card-footer text-center text-muted">
+                <a href="{% url 'article_edit' article.pk %}">Editar</a> |
+                <a href="{% url 'article_delete' article.pk %}">Borrar</a>
+            </div>
+        </div>
+        <br/>
+    {% endfor %}
+{% endblock content %}
