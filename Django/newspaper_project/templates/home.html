@@ -3,12 +3,13 @@
 {% block title %}Inicio{% endblock %}
 
 {% block content %}
-    {% if user.is_authenticated %}
-        <h3>¡Hola {{ user.username | capfirst }}!</h3>
-        {% if user.age %}
-            <p>Tienes {{ user.age }} años.</p>
-        {% endif %}
-    {% else %}
-        <p>Aún no has iniciado sesión</p>
-    {% endif %}
+  <br/>
+  <div class="jumbotron">
+    <h1 class="display-4">Newspaper app</h1>
+    <p class="lead">Un Periódico con Django.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}"
+      role="button">Ver los artículos</a>
+    </p>
+  </div>
 {% endblock content %}
