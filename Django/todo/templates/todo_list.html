@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}ToDo{% endblock %}
+
+{% block content %}
+    <h1>Lista de tareas</h1>
+    <table class="table table-striped">
+        <tbody>
+        {% for task in object_list %}
+            <tr>
+                <td width="80%">{{ task.body }}</td>
+                <td>
+                    <a href="{% url 'task_edit' task.pk %}" >Editar</a> |
+                    <a href="{% url 'task_delete' task.pk %}" class="text-danger">Eliminar</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

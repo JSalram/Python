@@ -9,17 +9,19 @@
     <p><a href="{% url 'article_edit' article.pk %}">Editar</a> | <a
             href="{% url 'article_delete' article.pk %}">Borrar</a></p>
 
+    <a href="{% url 'comment_new' article.pk %}" class="btn btn-info">Añadir comentario</a>
     {% if article.comments.all %}
         <hr class="bg-dark">
-            <h4>Comentarios</h4>
-            {% for comment in article.comments.all %}
-                <p>
+        <h4>Comentarios</h4>
+        {% for comment in article.comments.all %}
+            <p>
             <span class="font-weight-bold">
               {{ comment.author }} &middot;
             </span>
-                    {{ comment }}
-                </p>
-            {% endfor %}
+                {{ comment }} |
+            <a href="{% url 'comment_delete' comment.pk %}">Borrar</a>
+            </p>
+        {% endfor %}
     {% endif %}
 
     <p>Volver a <a href="{% url 'article_list' %}">Todos los artículos</a>.</p>
